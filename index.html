@@ -6,61 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site</title>
   </head>
-  <style>
-    .loader {
-      position: relative;
-      width: 0.7rem;
-      height: 0.7rem;
-      border-radius: 50%;
-      background-color: var(--tmg-c-m);
-      margin: 0 0.8rem;
-      animation: upDown 1s ease-in-out infinite;
-    }
-    .loader::before,
-    .loader::after {
-      content: "";
-      position: absolute;
-      width: 0.7rem;
-      height: 0.7rem;
-      border-radius: 50%;
-      background-color: var(--tmg-c-m);
-      animation: upDown 1s ease-in-out infinite;
-      animation-delay: -0.4s;
-      box-sizing: border-box;
-    }
-    .loader::before {
-      left: calc(50% - 0.8rem - 0.8rem);
-      background-color: #7e9dec;
-    }
-    .loader::after {
-      left: calc(50% + 0.8rem);
-      animation-delay: -0.8s;
-      background-color: #063ecb;
-    }
-    @keyframes upDown {
-      0%,
-      100% {
-        transform: translateY(0.3rem);
-      }
-      50% {
-        transform: translateY(-0.3rem);
-      }
-    }
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.4);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-  </style>
   <body>
     <p>Hello, World! !</p>
 
+    <style>
+      .loader {
+        position: relative;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background-color: var(--tmg-c-m);
+        margin: 0 0.8rem;
+        animation: upDown 1s ease-in-out infinite;
+      }
+      .loader::before,
+      .loader::after {
+        content: "";
+        position: absolute;
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background-color: var(--tmg-c-m);
+        animation: upDown 1s ease-in-out infinite;
+        animation-delay: -0.4s;
+        box-sizing: border-box;
+      }
+      .loader::before {
+        left: calc(50% - 0.8rem - 0.8rem);
+        background-color: #7e9dec;
+      }
+      .loader::after {
+        left: calc(50% + 0.8rem);
+        animation-delay: -0.8s;
+        background-color: #063ecb;
+      }
+      @keyframes upDown {
+        0%,
+        100% {
+          transform: translateY(0.3rem);
+        }
+        50% {
+          transform: translateY(-0.3rem);
+        }
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.4);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
     <span class="loader"></span>
   </body>
 </html>
